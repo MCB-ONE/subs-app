@@ -9,24 +9,53 @@ header {
   padding: 20px 40px;
   background-color: #1f1f1f; /* Fondo del encabezado */
   color: #0ea47a; /* Color del texto del encabezado */
-  font-family: 'Roboto', sans-serif; /* Establecer la fuente tipográfica */
+  font-family: 'Roboto', sans-serif; /* Fuente tipográfica del encabezado */
 }
 
-.logo img {
-  width: 150px; /* Ajusta el tamaño según tus necesidades */
+.logo-img {
+  width:200px;
+  text-align: center; /* Alinea el logo al centro */
 }
 
-.cart-icon {
-    margin-left: 2rem;
+.menu {
+  display: flex;
+  align-items: center;
 }
+
+.menu-button {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0ea47a; /* Color del texto del botón del menú */
+}
+
+.cart-icon{
+  width: 50px; /* Ajusta el tamaño del icono del carrito de compra */
+  height: 30px; /* Ajusta la altura del icono del carrito de compra si es necesario */
+}
+
 
   /* Estilos para dispositivos móviles */
   @media only screen and (max-width: 768px) {
-    .menu {
-      position: relative;
+    header{
+      padding: 10px;
     }
-  
+
+    .logo{
+      order: 2; /* Cambia el orden del logo al principio en dispositivos móviles */
+    }
+
+    .cart-icon {
+      order: 3; /* Cambia el orden del logo al principio en dispositivos móviles */
+    }
+
+    .menu{
+      order: 1;
+    }
+
     .menu-button {
+
       font-size: 20px;
       background: none;
       border: none;
