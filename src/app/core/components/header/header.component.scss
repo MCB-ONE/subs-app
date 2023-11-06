@@ -1,0 +1,94 @@
+/* Añadir la importación de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos generales para el encabezado */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1f1f1f; /* Fondo del encabezado */
+  color: #0ea47a; /* Color del texto del encabezado */
+  font-family: 'Roboto', sans-serif; /* Establecer la fuente tipográfica */
+}
+
+.logo img {
+  width: 150px; /* Ajusta el tamaño según tus necesidades */
+}
+
+.cart-icon {
+    margin-left: 2rem;
+}
+
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 768px) {
+    .menu {
+      position: relative;
+    }
+  
+    .menu-button {
+      font-size: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #0ea47a; /* Color del texto del menú en dispositivos móviles */
+    }
+  
+    .menu-items {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #1f1f1f; /* Fondo del menú en dispositivos móviles */
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      padding: 12px 16px;
+    }
+  
+    .menu-items.show {
+      display: block;
+    }
+  
+    .menu-items a {
+      display: block;
+      padding: 8px 0;
+      text-decoration: none;
+      color: #0ea47a; /* Color del texto de los enlaces en dispositivos móviles */
+    }
+  
+    .menu-items a:hover {
+      background-color: #0ea47a; /* Color de fondo al pasar el ratón sobre los enlaces en dispositivos móviles */
+      color: #1f1f1f; /* Color del texto al pasar el ratón sobre los enlaces en dispositivos móviles */
+    }
+  
+    /* Ocultar enlaces en dispositivos móviles */
+    .menu-items {
+      display: none;
+    }
+  }
+  
+  /* Estilos para tablet y escritorio */
+  @media only screen and (min-width: 769px) {
+    .menu {
+      display: flex;
+    }
+  
+    .menu-button {
+      display: none;
+    }
+  
+    .menu-items {
+      display: flex;
+    }
+  
+    .menu-items a {
+      padding: 0 15px;
+      text-decoration: none;
+      color: #0ea47a; /* Color del texto de los enlaces en tablet y escritorio */
+    }
+  
+    .menu-items a:hover {
+      color: #fff; /* Color del texto al pasar el ratón sobre los enlaces en tablet y escritorio */
+      border-bottom: 2px solid #0ea47a; /* Color de la línea inferior al pasar el ratón sobre los enlaces en tablet y escritorio */
+    }
+  }
+  
