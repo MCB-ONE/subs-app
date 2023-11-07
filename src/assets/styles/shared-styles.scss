@@ -1,0 +1,93 @@
+/* Importa Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos globales */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/* Estilos para diferentes niveles de títulos y subtítulos */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos para títulos de nivel 1 */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos para títulos de nivel 2 */
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para títulos de nivel 3 */
+h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+/* Estilos para títulos de nivel 4 */
+h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+/* Estilos para títulos de nivel 5 */
+h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+/* Estilos para títulos de nivel 6 */
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilo para enlaces */
+a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Estilo para texto */
+p {
+  margin-bottom: 1rem;
+}
+// Estilos para los componentes contenedores
+.container-component {
+  max-width: 100%;
+    padding: 20px;
+    @media (max-width: 768px) {
+      /* Ajustes específicos para dispositivos con un ancho máximo de 768px */
+      padding: 5%;
+    }
+  
+    @media (max-width: 480px) {
+      /* Ajustes específicos para dispositivos con un ancho máximo de 480px */
+      padding: 10px;
+    }
+  }

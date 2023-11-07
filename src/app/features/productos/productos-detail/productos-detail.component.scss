@@ -1,0 +1,36 @@
+$mobile-breakpoint: 768px;
+
+.container-component {
+  margin: 0 auto;
+}
+
+.full-width-section {
+  width: 100%;
+  background-color: lightblue; // Cambia el color según tus preferencias
+}
+
+.half-width-section {
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: $mobile-breakpoint) {
+    flex-direction: row;
+  }
+
+  .left-half, .right-half {
+    @media only screen and (min-width: $mobile-breakpoint) {
+      width: 60%;
+    }
+  }
+
+  .left-half {
+    background-color: lightgreen; // Cambia el color según tus preferencias
+  }
+
+  .right-half {
+    @media only screen and (min-width: $mobile-breakpoint) {
+      width: 40%;
+    }
+    background-color: lightcoral; // Cambia el color según tus preferencias
+  }
+}
